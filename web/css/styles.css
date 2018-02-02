@@ -1,0 +1,112 @@
+body, html
+{
+	background-color:grey;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+}
+
+.page-container
+{
+	height:100%;
+	position: relative;
+	flex-grow:1;
+}
+
+#main-container
+{
+	text-align: center;
+	width:100%;
+	height: 100%;
+
+
+}
+
+#left, #right
+{
+	border:groove;
+	display:inline-block;
+	min-height: 100%
+}
+
+#center
+{
+	display:inline-block;
+	min-width:75%;
+	max-width:80%;
+	min-height: 100%
+
+}
+
+.main
+{
+
+	background-color:lightgrey;
+	display:block;
+	overflow:hidden;
+}
+
+.content-left, .content-right
+{
+	border:groove;
+	display:inline-block;
+	vertical-align: middle;
+	margin-top:5%;
+}
+
+.campaigns
+{
+	display:inline-block;
+	border:solid;
+	width:45%;
+}
+
+.campaigns img
+{
+	width:100%;
+	background-color: white;
+}
+
+.info-pane
+{
+	border:solid;
+	display:block;
+	margin-top:20%;
+
+}
+
+.actions
+{
+	border:groove;
+	display:inline-block;
+	vertical-align: top;
+	width:45%;
+
+}
+
+.attacks, .defence, .movement
+{
+	border:solid;
+	height:25%;
+	display:block;
+	margin-bottom:15%;
+}
+
+.attacks img, .defence img, .movement img
+{
+	width:50%;
+	height:180px;
+	min-height:130px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.closing
+{
+	display:block;
+	min-height: 200px;
+	background: linear-gradient(grey, #222222, #000000)
+
+}

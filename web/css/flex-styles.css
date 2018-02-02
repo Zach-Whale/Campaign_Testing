@@ -1,0 +1,55 @@
+html, body
+{
+	background-color: grey;
+	padding:0;
+	margin:0;
+}
+
+#page-container
+{
+	display: flex;
+	flex-flow:row wrap;
+}
+#profile-bar
+{
+	width: 100%;
+	display:flex;
+	background-color: black;
+	color: white;
+	margin: 20px auto auto auto;
+	max-height: 101px;
+}
+
+#profile-bar img
+{
+	display: flex;
+	max-height:95px;
+	margin: auto auto auto 20%;
+}
+
+#body
+{
+	width:65%;
+	display: flex;
+	background-color: lightgrey;
+	margin: auto auto auto auto;
+	padding: 10px;
+	height:100%;
+
+}
+
+#body-column-1
+{
+	flex: 1;
+	order: 1;
+	padding:10px;
+
+
+}
+
+#body-column-2
+{
+	flex: 1;
+	order: 2;
+	padding:10px;
+}
