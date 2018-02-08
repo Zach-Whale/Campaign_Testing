@@ -1,0 +1,204 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 4, 2018, 8:04:52 PM
+    Author     : Zach
+*/
+
+html 
+{
+    height:100%;
+    
+    margin:0px;
+}
+
+body
+{
+    height:100%;
+    margin:0px;
+}
+
+#homeWrapper
+{
+    display: grid;
+    background-color:#E7DACA;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 10px 100px 1fr 1fr 1fr .5fr;
+    height:100%;
+    grid-template-areas:
+        ". . ."
+        "header header header"
+        ". mid ."
+        ". mid ."
+        ". mid ."
+        "footer footer footer";
+   
+}
+
+#mid-grid
+{
+    display:grid;
+    grid-area:mid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    height:100%;
+        
+    grid-template-areas:
+    "campaign battle"
+    "campaign movement"
+    "info militia";
+       
+}
+
+#header
+{
+    background-color:#333;
+    grid-area: header;
+    display:grid;
+    grid-template-columns:1fr 1fr 3.5fr .75fr .75fr 1fr;
+    grid-template-areas:". logo nav profile profileblock .";
+}
+#campaign
+{
+    background-color:#888;
+    grid-area:campaign;
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr 1fr;
+    grid-template-rows:1fr 5fr 1fr;
+    grid-template-areas:
+        ". . . ."
+        ". img img ."
+        ". . . .";
+}
+#profile-block
+{
+    grid-area:profileblock;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-areas:
+        "name" 
+        "options" 
+        "signout";
+}
+
+#nav
+{
+    grid-area:nav;
+
+}
+
+
+#footer
+{
+    background-color:#870419;
+    grid-area:footer;
+}
+
+
+
+#campaign-image
+{
+    grid-area:img;
+}
+
+#campaign-image img
+{
+    width:100%;
+}
+#battle
+{
+    background-color:#888;
+    grid-area:battle;
+}
+#movement
+{
+    background-color:#888;
+    grid-area:movement;
+}
+#info
+{
+    background-color:#888;
+    grid-area:info;
+}
+
+#militia
+{
+    background-color:#888;
+    grid-area:militia;
+}
+
+/* Logo Start*/
+#logo
+{
+    grid-area:logo;
+}
+#logo > img
+{
+    height:100px;
+}
+/* Logo End*/
+
+/* Profile Block Start*/
+#profile
+{
+    grid-area:profile;   
+}
+#profile > img
+{
+    height:100px;
+}
+#profile-name
+{
+    grid-area:name;
+    color:white;
+    text-align: left;
+    font-size:1.3em;
+    text-decoration: underline;
+}
+#profile-options
+{
+    grid-area:options;
+    color:white;
+    text-align: left;
+    font-size:1em;
+}
+#profile-signout
+{
+    grid-area:signout;
+    color:white;
+    text-align: left;
+    font-size:1em;
+}
+/* Profile Block End*/
+
+/* Nav Bar Start*/
+#nav ul
+{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+}
+#nav ul li
+{
+    float:left;
+}
+#nav ul li a
+{
+    display:block;
+    height:100px;
+    width:100px;
+    text-decoration: none;
+    line-height:100px;
+    color:white;
+    
+}
+#nav ul li a:hover
+{
+    background-color:#111;
+}
+/* Nav Bar Close*/
