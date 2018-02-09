@@ -58,31 +58,28 @@ body
     background-color:#333;
     grid-area: header;
     display:grid;
-    grid-template-columns:1fr 1fr 3.5fr .75fr .75fr 1fr;
-    grid-template-areas:". logo nav profile profileblock .";
+    grid-template-columns:1fr 1fr 3.5fr 1.5fr 1fr;
+    grid-template-areas:". logo nav profile  .";
 }
 #campaign
 {
     background-color:#888;
     grid-area:campaign;
-    display:grid;
-    grid-template-columns:1fr 2fr 2fr 1fr;
-    grid-template-rows:1fr 5fr 1fr;
-    grid-template-areas:
-        ". . . ."
-        ". img img ."
-        ". . . .";
+    display:flex;
+    justify-content:  center;
+    align-items: center;
 }
-#profile-block
+#profile
 {
-    grid-area:profileblock;
+    height:100px;
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-areas:
-        "name" 
-        "options" 
-        "signout";
+        "profile username"
+        "profile options"
+        "profile signout";
+    grid-area:profile;   
 }
 
 #nav
@@ -98,16 +95,13 @@ body
     grid-area:footer;
 }
 
-
-
-#campaign-image
+#campaign img
 {
-    grid-area:img;
-}
-
-#campaign-image img
-{
-    width:100%;
+    width:50%;
+    
+    display:flex;
+    justify-content:  center;
+    align-items: center;
 }
 #battle
 {
@@ -143,17 +137,24 @@ body
 /* Logo End*/
 
 /* Profile Block Start*/
-#profile
-{
-    grid-area:profile;   
-}
+
 #profile > img
 {
     height:100px;
 }
+#profile-pic
+{
+    grid-area:profile;
+    height:100px;
+}
+#profile-pic img
+{
+    height:100px;
+}
+
 #profile-name
 {
-    grid-area:name;
+    grid-area:username;
     color:white;
     text-align: left;
     font-size:1.3em;
